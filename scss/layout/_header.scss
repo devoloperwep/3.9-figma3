@@ -1,0 +1,105 @@
+.header {
+  padding-top: 2.4rem;
+  padding-bottom: 7.1rem;
+  @include respond(sm) {
+    padding-top: 2rem;
+    padding-bottom: 5.8rem;
+  }
+  .sitenav {
+    margin-bottom: 14rem;
+    &__container {
+      max-width: 1400px;
+      @include respond(sm) {
+        padding-right: 1.2rem;
+      }
+    }
+    @include respond(sm) {
+      margin-bottom: 3.3rem;
+    }
+    &__list {
+      @include flex($justify: flex-end, $gap: 3.3rem);
+    }
+    &__item1 {
+      cursor: pointer;
+      display: none;
+      @include respond(sm) {
+        display: block;
+      }
+    }
+    &__item {
+      @include respond(sm) {
+        display: none;
+      }
+    }
+    &__link {
+      color: #000000;
+      font-size: $font-md;
+      font-weight: $font-weight-medium;
+      line-height: 1;
+    }
+  }
+  .hero {
+    &__container {
+      @include flex($justify: space-between);
+      @include respond(sm) {
+        @include flex($justify: center, $direction: column-reverse);
+      }
+    }
+    &__content {
+      width: 100%;
+      max-width: 505px;
+      @include respond(sm) {
+        text-align: center;
+      }
+    }
+    &__title {
+      font-size: $font-lg;
+      line-height: 1.36;
+      margin-bottom: 4rem;
+      @include respond(sm) {
+        margin-bottom: 2.1rem;
+      }
+    }
+    &__description {
+      line-height: $line-height-xs;
+      margin-bottom: 3.8rem;
+      @include respond(sm) {
+        margin-bottom: 2.7rem;
+      }
+    }
+    &__btn {
+      background-color: #ff6464;
+      color: $color-white;
+      padding: 1.5rem 2.1rem 1.5rem 2rem;
+    }
+    &__images {
+      width: 243px;
+      height: 243px;
+      position: relative;
+      @include respond(sm) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3.4rem;
+        width: 180px;
+        height: 180px;
+      }
+    }
+    &__img {
+      border-radius: 50%;
+      @include respond(sm) {
+        width: 180px;
+        height: 180px;
+      }
+    }
+    &__position {
+      top: 10px;
+      right: 10px;
+      position: absolute;
+      z-index: -1;
+      @include respond(sm) {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}

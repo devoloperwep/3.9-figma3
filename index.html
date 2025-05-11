@@ -4,14 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <!-- header -->
-    <header></header>
-    <main></main>
+    <header class="header">
+      <div class="header__container">
+        <nav class="sitenav container sitenav__container">
+          <ul class="sitenav__list">
+            <li class="sitenav__item1">
+              <img src="./image/menu.svg" alt="" width="30" height="18" />
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <h2 class="hero__title">
+                Hi, I am John, <br />
+                Creative Technologist
+              </h2>
+              <p class="hero__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <a href="#" class="hero__btn">Download Resume</a>
+            </div>
+            <div class="hero__images">
+              <img
+                class="hero__img"
+                src="./image/john.png"
+                alt=""
+                width="243"
+                height="243"
+              />
+              <img
+                class="hero__position"
+                src="./image/hero-bg.png"
+                width="243"
+                height="243"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Create -->
+      <section class="create">
+        <div class="create__container container">
+          <div class="create__message">
+            <h3 class="create__message-title">Recent posts</h3>
+            <a href="#" class="create__message-link">View all</a>
+          </div>
+          <ul class="create__list">
+            <li class="create__item">
+              <h1 class="create__title">Making a design system from scratch</h1>
+              <div class="create__texts">
+                <p class="create__date">12 Feb 2020</p>
+                <p class="create__author">Design, Pattern</p>
+              </div>
+              <p class="create__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+            <li class="create__item">
+              <h1 class="create__title">
+                Creating pixel perfect icons in Figma
+              </h1>
+              <div class="create__texts">
+                <p class="create__date">12 Feb 2020</p>
+                <p class="create__author">Figma, Icon Design</p>
+              </div>
+              <p class="create__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Works -->
+      <section class="works">
+        <div class="works__container container">
+          <h3 class="works__title">Featured works</h3>
+          <ul class="works__list">
+            <li class="works__item">
+              <img
+                width="246"
+                height="180"
+                src="./image/dessign.png"
+                alt=""
+                class="works__img"
+              />
+              <div class="works__content">
+                <h3 class="works__content-title">Designing Dashboards</h3>
+                <p class="works__content-control">
+                  <span class="works__content-date">2020</span>
+                  Dashboard
+                </p>
+                <p class="works__content-description">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+            <li class="works__item">
+              <img
+                width="246"
+                height="180"
+                src="./image/vibrant.png"
+                alt=""
+                class="works__img"
+              />
+              <div class="works__content">
+                <h3 class="works__content-title">Vibrant Portraits of 2020</h3>
+                <p class="works__content-control">
+                  <span class="works__content-date">2018</span> Illustration
+                </p>
+                <p class="works__content-description">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+            <li class="works__item">
+              <img
+                width="246"
+                height="180"
+                src="./image/type.png"
+                alt=""
+                class="works__img"
+              />
+              <div class="works__content">
+                <h3 class="works__content-title">36 Days of Malayalam type</h3>
+                <p class="works__content-control">
+                  <span class="works__content-date">2018</span> Typography
+                </p>
+                <p class="works__content-description">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer">
+        <div class="footer__container container">
+          <div class="footer__icons">
+            <img src="./image/fb.svg" alt="" width="30" height="30" />
+            <img src="./image/insta.svg" alt="" width="30" height="30" />
+            <img src="./image/twitte.svg" alt="" width="30" height="30" />
+            <img src="./image/Linkedin.svg" alt="" width="30" height="30" />
+          </div>
+          <p class="footer__description">Copyright ©2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

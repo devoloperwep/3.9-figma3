@@ -26,6 +26,10 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: $font-hebbo;
+  font-size: $font-xs;
+  font-weight: $font-weight-regular;
+  color: $dark-color;
 }
 main {
   flex-grow: 1;
@@ -35,11 +39,16 @@ h1 {
 }
 .container {
   width: 100%;
-  max-width: 1200px; // Bu o'zgaruvchan.
+  max-width: 960px; // Bu o'zgaruvchan.
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+.hidden {
+  @include respond(sm) {
+    display: none;
+  }
 }
 // margin, padding, border-radius, font-size, gap, -> rem;
 // width, heightni -> max va pxda bering.

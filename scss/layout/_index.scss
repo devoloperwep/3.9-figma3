@@ -1,0 +1,119 @@
+// Create
+.create {
+  padding-top: 0.7rem;
+  padding-bottom: 3.2rem;
+  background-color: #edf7fa;
+  &__message {
+    @include flex($justify: space-between, $align: center);
+    @include respond(sm) {
+      @include flex($justify: center);
+    }
+    &-title {
+      font-size: 2.2rem;
+      font-weight: $font-weight-regular;
+      line-height: 2.72;
+    }
+    &-link {
+      @include respond(sm) {
+        display: none;
+      }
+      color: #00a8cc;
+    }
+  }
+  &__list {
+    @include flex($gap: 2rem);
+    @include respond(sm) {
+      @include flex($direction: column, $gap: 1.7rem);
+    }
+  }
+  &__item {
+    padding: 2.4rem;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 0px #bbe1fa40;
+  }
+  &__title {
+    font-size: 2.6rem;
+    line-height: $line-height-xs;
+    margin-bottom: 2rem;
+  }
+  &__texts {
+    @include flex($gap: 3rem);
+    font-size: $font-sm;
+    margin-bottom: 1.5rem;
+  }
+  &__date {
+    padding-right: 3rem;
+    border-right: 1px solid #000000;
+  }
+  &__description {
+    font-size: $font-xs;
+    width: 100%;
+    max-width: 368px;
+    line-height: $line-height-md;
+  }
+}
+// works
+.works {
+  padding-top: 1.5rem;
+  margin-bottom: 5.1rem;
+  @include respond(sm) {
+    margin-bottom: 12.9rem;
+  }
+  &__title {
+    font-size: 2.2rem;
+    font-weight: $font-weight-regular;
+    line-height: 2.72;
+    margin-bottom: 2.2rem;
+    @include respond(sm) {
+      margin-bottom: 0.2rem;
+      text-align: center;
+    }
+  }
+  &__item {
+    @include flex($gap: 1.8rem);
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 3.1rem;
+    @include respond(sm) {
+      @include flex($direction: column);
+      padding-bottom: 1.7rem;
+    }
+  }
+  &__item:nth-child(2),
+  &__item:nth-child(3) {
+    @include respond(sm) {
+      display: none;
+    }
+  }
+  &__img {
+    border-radius: 0.6rem;
+    @include respond(sm) {
+      width: 100%;
+      margin-bottom: 1.7rem;
+    }
+  }
+  &__content {
+    &-title {
+      font-size: $font-lg;
+      line-height: 1;
+      margin-bottom: 1.8rem;
+    }
+    &-control {
+      @include flex($align: center, $gap: 2.6rem);
+      color: #8695a4;
+      font-size: $font-md;
+      margin-bottom: 1.8rem;
+    }
+    &-date {
+      font-size: $font-sm;
+      background-color: #142850;
+      color: $color-white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 1.6rem;
+      font-weight: $font-weight-black;
+    }
+    &-description {
+      line-height: $line-height-md;
+    }
+  }
+}

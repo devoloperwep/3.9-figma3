@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 5.1rem;
+  padding-bottom: 5.4rem;
+  &__container {
+    @include flex($direction: column, $align: center);
+  }
+  &__icons {
+    @include flex($gap: 3.5rem);
+    margin-bottom: 2.6rem;
+  }
+  &__description {
+    font-size: 1.4rem;
+  }
+}
