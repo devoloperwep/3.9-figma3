@@ -1,6 +1,5 @@
 .header {
   padding-top: 2.4rem;
-  padding-bottom: 7.1rem;
   @include respond(sm) {
     padding-top: 2rem;
     padding-bottom: 5.8rem;
@@ -22,6 +21,8 @@
     &__item1 {
       cursor: pointer;
       display: none;
+      position: relative;
+      z-index: 99;
       @include respond(sm) {
         display: block;
       }
@@ -36,9 +37,14 @@
       font-size: $font-md;
       font-weight: $font-weight-medium;
       line-height: 1;
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
   .hero {
+    padding-bottom: 7.1rem;
+
     &__container {
       @include flex($justify: space-between);
       @include respond(sm) {
@@ -102,4 +108,39 @@
       }
     }
   }
+}
+.modal__sitenav {
+  backdrop-filter: blur(3px);
+  background-color: rgba(54, 25, 25, 0.458);
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  transform: translateX(100%);
+  transition: transform 0.4s;
+  .sitenav__lists {
+    @include flex(
+      $justify: center,
+      $gap: 3rem,
+      $direction: column,
+      $align: center
+    );
+  }
+  .sitenav__link {
+    color: #000000;
+    font-size: $font-md;
+    font-weight: $font-weight-medium;
+    line-height: 1;
+    &:active {
+      color: white;
+    }
+  }
+}
+.show {
+  transform: translateX(0%);
+}
+.hidden {
+  display: none;
 }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
+  <body>
+    <!-- responsive navbar -->
+    <nav class="modal__sitenav">
+      <ul class="sitenav__lists">
+        <li class="sitenav__items">
+          <a id="active" href="#" class="sitenav__link">Blog</a>
+        </li>
+        <li class="sitenav__items">
+          <a href="#" class="sitenav__link">Works</a>
+        </li>
+
+        <li class="sitenav__items">
+          <a href="#" class="sitenav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <nav class="sitenav container sitenav__container">
+          <ul class="sitenav__list">
+            <li class="sitenav__item1">
+              <img
+                id="show-menu"
+                class="image-1"
+                src="../image/menu.svg"
+                alt=""
+                width="30"
+                height="18"
+              />
+              <img
+                class="hidden image-2"
+                id="show-menu"
+                src="../image/close.png"
+                alt=""
+                width="30"
+                height="18"
+              />
+            </li>
+            <li class="sitenav__item">
+              <a id="active" href="#" class="sitenav__link">Blog</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Works</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <section class="blog">
+        <div class="blog__container container">
+          <div class="blog__item">
+            <h2 class="blog__title">Blog</h2>
+            <h3 class="blog__subtitle">UI Interactions of the week</h3>
+            <div class="blog__content">
+              <p class="blog__content-description">12 Feb 2019</p>
+              <p class="blog__content-description text-light">
+                Express, Handlebars
+              </p>
+            </div>
+            <p class="blog__description">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div class="blog__item">
+            <h3 class="blog__subtitle">UI Interactions of the week</h3>
+            <div class="blog__content">
+              <p class="blog__content-description">12 Feb 2019</p>
+              <p class="blog__content-description text-light">
+                Express, Handlebars
+              </p>
+            </div>
+            <p class="blog__description">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div class="blog__item">
+            <h3 class="blog__subtitle">UI Interactions of the week</h3>
+            <div class="blog__content">
+              <p class="blog__content-description">12 Feb 2019</p>
+              <p class="blog__content-description text-light">
+                Express, Handlebars
+              </p>
+            </div>
+            <p class="blog__description">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+          <div class="blog__item">
+            <h3 class="blog__subtitle">UI Interactions of the week</h3>
+            <div class="blog__content">
+              <p class="blog__content-description">12 Feb 2019</p>
+              <p class="blog__content-description text-light">
+                Express, Handlebars
+              </p>
+            </div>
+            <p class="blog__description first-description">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer">
+        <div class="footer__container container">
+          <div class="footer__icons">
+            <img src="../image/fb.svg" alt="" width="30" height="30" />
+            <img src="../image/insta.svg" alt="" width="30" height="30" />
+            <img src="../image/twitte.svg" alt="" width="30" height="30" />
+            <img src="../image/Linkedin.svg" alt="" width="30" height="30" />
+          </div>
+          <p class="footer__description">Copyright ©2020 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const showMenu = document.querySelector("#show-menu");
+      const modal = document.querySelector(".modal__sitenav");
+      const image1 = document.querySelector(".image-1");
+      const image2 = document.querySelector(".image-2");
+      image1.addEventListener("click", () => {
+        image1.classList.toggle("hidden");
+        image2.classList.toggle("hidden");
+        modal.classList.toggle("show");
+      });
+      image2.addEventListener("click", () => {
+        image1.classList.toggle("hidden");
+        image2.classList.toggle("hidden");
+        modal.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

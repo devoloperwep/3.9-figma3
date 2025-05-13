@@ -45,10 +45,11 @@ h1 {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.hidden {
-  @include respond(sm) {
-    display: none;
-  }
+.text-light {
+  color: #8695a4;
+}
+#active {
+  color: #ff6464;
 }
 // margin, padding, border-radius, font-size, gap, -> rem;
 // width, heightni -> max va pxda bering.

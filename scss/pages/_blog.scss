@@ -1,0 +1,75 @@
+.blog {
+  color: $dark-color;
+  &__container {
+    display: grid;
+    place-items: center;
+  }
+  &__item {
+    margin-bottom: 3.2rem;
+    @include respond(sm) {
+      margin-bottom: 1.8rem;
+    }
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+  &__title {
+    font-size: $font-xl;
+    line-height: 1.363;
+    margin-bottom: 5.5rem;
+    @include respond(sm) {
+      margin-bottom: 1.8rem;
+      font-size: $font-lg;
+    }
+  }
+  &__subtitle {
+    font-size: $font-lg;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    @include respond(sm) {
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+  }
+  &__content {
+    margin-bottom: 1.5rem;
+    @include flex;
+    &-description {
+      font-size: $font-md;
+      line-height: 1;
+      font-weight: 400;
+      padding-right: 2rem;
+      border-right: 1px solid #000000;
+      @include respond(sm) {
+        font-size: 1.4rem;
+        margin-bottom: 1.7rem;
+        padding-right: 1rem;
+      }
+    }
+    &-description:nth-child(2) {
+      padding-left: 2rem;
+      border: none;
+      @include respond(sm) {
+        padding-left: 1rem;
+      }
+    }
+  }
+  &__description {
+    width: 100%;
+    max-width: 650px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    padding-bottom: 1.7rem;
+    border-bottom: 1px solid #e0e0e0;
+    @include respond(sm) {
+      padding-bottom: 1.2rem;
+    }
+  }
+  .first-description {
+    padding-bottom: 3rem;
+    @include respond(sm) {
+      padding-bottom: 2.2rem;
+    }
+  }
+}
