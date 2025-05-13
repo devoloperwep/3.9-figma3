@@ -117,3 +117,22 @@
     }
   }
 }
+.title__works {
+  font-size: $font-xl;
+  margin-bottom: 2.5rem;
+  @include respond(sm) {
+    font-size: $font-lg;
+    margin-bottom: 1.3rem;
+  }
+}
+.sm-hidden {
+  @include respond(sm) {
+    display: none;
+  }
+}
+.hidden-sm {
+  display: none;
+  @include respond(sm) {
+    display: block;
+  }
+}
